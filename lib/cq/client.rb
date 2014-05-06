@@ -9,12 +9,12 @@ module CQ
     attr_reader :options
 
     DEFAULT_OPTIONS = {
-      :site               => 'http://localhost:4502',
       :auth_type          => :basic
     }
 
     def initialize(options={})
       options = DEFAULT_OPTIONS.merge(options)
+      options[:site] ||= 'http://localhost:4502'
       @options = options
 
       case options[:auth_type]
@@ -63,10 +63,4 @@ module CQ
 
   end
 end
-
-# cq = CQ::Client.new
-
-# content = cq.get("/content.pages.json")
-
-# puts content.body
 

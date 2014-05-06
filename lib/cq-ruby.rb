@@ -11,9 +11,8 @@ require 'cq/http_error'
 require 'cq/request_client'
 require 'cq/version'
 
-
 require 'cq/resources/component'
 require 'cq/resources/content'
 require 'cq/resources/cq_users'
 require 'cq/resources/node'
-require 'cq/resources/pages'
+require 'cq/resources/page'

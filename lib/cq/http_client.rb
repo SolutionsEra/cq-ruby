@@ -1,6 +1,6 @@
 require 'json'
 require 'net/https'
-# require_relative "request_client"
+require_relative "request_client"
 
 module CQ
   class HttpClient < RequestClient

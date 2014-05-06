@@ -2,13 +2,13 @@ module CQ
   module Resource
     class Component
 
-    	def initialize
+      def initialize
     		
-    	end
+      end
 
-    	def components
+      def components
     		
-    	end
+      end
     end
   end
 end
